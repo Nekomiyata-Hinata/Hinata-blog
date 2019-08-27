@@ -34,7 +34,7 @@ live2d_settings['canCloseLive2d']       = false;         // 显示 关闭看板�
 live2d_settings['canSwitchModel']       = true;         // 显示 模型切换    按钮，可选 true(真), false(假)
 live2d_settings['canSwitchTextures']    = true;         // 显示 材质切换    按钮，可选 true(真), false(假)
 live2d_settings['canSwitchHitokoto']    = true;         // 显示 一言切换    按钮，可选 true(真), false(假)
-live2d_settings['canTakeScreenshot']    = false;         // 显示 看板娘截图  按钮，可选 true(真), false(假)
+live2d_settings['canTakeScreenshot']    = true;         // 显示 看板娘截图  按钮，可选 true(真), false(假)
 live2d_settings['canTurnToHomePage']    = true;         // 显示 返回首页    按钮，可选 true(真), false(假)
 live2d_settings['canTurnToAboutPage']   = true;         // 显示 跳转关于页  按钮，可选 true(真), false(假)
 
@@ -152,7 +152,7 @@ function initModel(waifuPath, type) {
     } catch(err) { console.log('[Error] JQuery UI is not defined.') }
     
     live2d_settings.homePageUrl == 'auto' ? window.location.protocol+'//'+window.location.hostname+'/' : live2d_settings.homePageUrl;
-    if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'https:'+live2d_settings.modelAPI;
+    if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'http:'+live2d_settings.modelAPI;
     
     $('.waifu-tool .fui-home').click(function (){
         //window.location = 'https://www.fghrsh.net/';
