@@ -152,7 +152,7 @@ function initModel(waifuPath, type) {
     } catch(err) { console.log('[Error] JQuery UI is not defined.') }
     
     live2d_settings.homePageUrl == 'auto' ? window.location.protocol+'//'+window.location.hostname+'/' : live2d_settings.homePageUrl;
-    if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'http:'+live2d_settings.modelAPI;
+    if (window.location.protocol == 'file:' && live2d_settings.modelAPI.substr(0,2) == '//') live2d_settings.modelAPI = 'https:'+live2d_settings.modelAPI;
     
     $('.waifu-tool .fui-home').click(function (){
         //window.location = 'https://www.fghrsh.net/';
