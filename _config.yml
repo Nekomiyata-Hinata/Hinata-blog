@@ -7,7 +7,7 @@ description: "Every failure is leading towards success."
 keyword: "BY, BY Blog, Hinata的博客, Hinata, iOS, Apple, iPhone"
 url: "http://Nekomiyata-Hinata.github.io/"          # your host, for absolute URL
 baseurl: "/blog"      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/Nekomiyata-Hinata/Nekomiyata-Hinata.github.io.git" # you code repository
+github_repo: "https://github.com/Nekomiyata-Hinata/blog.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -64,7 +64,7 @@ gitalk:
   enable: turn    #是否开启Gitalk评论
   clientID: 079251317660d35d62bd                            #生成的clientID
   clientSecret: 188410ef141ff64885fc01c6ced9662a8ff5a1e3    #生成的clientSecret
-  repo: Nekomiyata-Hinata.github.io    #仓库名称
+  repo: blog    #仓库名称
   owner: Nekomiyata-Hinata    #github用户名
   admin: Nekomiyata-Hinata
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
